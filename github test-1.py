@@ -1,7 +1,7 @@
 import time
 print ('Bem vindo a calculadora!')
 time.sleep(2)
-print ('Digite a equação desejada (ex: 2+3 ou 10/2)')
+print ('Digite a equação desejada (ex: 2+3 ou 10/2 ou a + (b * c) - n/m))')
 time.sleep(1)
 equacao = input(">>>")
 try:
@@ -9,3 +9,4 @@ try:
     print("Resultado:", resultado)
 except:
     print("equação inválida!")
+
