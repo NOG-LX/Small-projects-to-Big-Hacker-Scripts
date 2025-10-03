@@ -1,9 +1,11 @@
 import time
-print ("Bem vindo a calculadora!")
-
-time.sleep(3)
-
-print ('digite a equação desejada')
+print ('Bem vindo a calculadora!')
+time.sleep(2)
+print ('Digite a equação desejada (ex: 2+3 ou 10/2)')
 time.sleep(1)
-int = a = (1,2,3,4,5,6,7,8,9,0)
-int = b = (1,2,3,4,5,6,7,8,9,9)
+equacao = input(">>>")
+try:
+    resultado = eval(equacao) #avalia a expressão digitada
+    print("Resultado:", resultado)
+except:
+    print("equação inválida!")
